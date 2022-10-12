@@ -100,3 +100,22 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
+ul.horizontal-list{
+    list-style: none;
+    padding-inline: 20px ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+ul.horizontal-list li {
+    display: inline-block;
+    padding-inline: 10px;
+    padding-top: 5px
+}
+footer {
+    text-align: center;
+}
+footer li{
+    text-decoration: none;
+    border-right: 1px solid black
+}
