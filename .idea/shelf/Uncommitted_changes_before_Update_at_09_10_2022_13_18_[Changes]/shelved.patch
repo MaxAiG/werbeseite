@@ -1,0 +1,113 @@
+Index: index.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.css b/index.css
+new file mode 100644
+--- /dev/null	(date 1665313581435)
++++ b/index.css	(date 1665313581435)
+@@ -0,0 +1,102 @@
++body{
++    background-image: url("white-bg.jpg");
++    background-size:1920px;
++}
++.grid-container{
++    display: grid;
++    grid-template-columns: 1fr 2fr 1fr;
++    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
++}
++
++#topic{
++    grid-column-start: 2;
++}
++#überschrift{
++    font-size: 50px;
++    text-align: center;
++    padding-top: 35px;
++    color: mediumturquoise;
++    text-decoration: underline;
++    text-decoration-color: black;
++    margin-bottom: 0;
++}
++#info{
++    display: grid;
++    grid-row-start: 3;
++    grid-column-end: 3;
++    grid-column-start: 2;
++}
++#boxüberschrift{
++    text-align: center;
++    margin-bottom: 0;
++}
++#box{
++    margin-top: 0;
++    border-style: dotted;
++}
++.fh{
++    color: black;
++}
++
++.auswahl{
++    grid-column-start: 2;
++    grid-column-end: 4 ;
++}
++.auswahl ul{
++    border-style: solid;
++
++
++
++}
++.auswahl li{
++    text-decoration: underline;
++    display: inline-block;
++    font-weight: bold;
++    padding: 50px;
++
++}
++.mensalogo{
++    margin-top: 16px;
++    margin-bottom: 65px;
++    border-style: solid;
++
++    height: 118px;
++    grid-column-start: 1;
++    grid-column-end: 2;
++    grid-row-start: 2;
++
++}
++#logo{
++   padding-left: 150px;
++}
++.foodtable, th, td{
++    grid-row-start: 4;
++    grid-column-start: 2;
++    grid-column-end: 3;
++    text-align: center;
++    border: 1px solid black;
++    border-collapse: collapse;
++    align-items: center;
++
++}
++#tableüberschrift{
++   text-align: center;
++}
++.line{
++    grid-row-start: 3;
++    grid-column-end: 4;
++    grid-column-start: 1;
++
++}
++.counter{
++    text-align: center;
++    grid-row-start: 5;
++    grid-column-start: 2;
++    grid-column-end: 3;
++}
++.formular{
++    text-align: center;
++    grid-row-start: 6;
++    grid-column-start: 2;
++    grid-column-end: 3;
++}
+\ No newline at end of file

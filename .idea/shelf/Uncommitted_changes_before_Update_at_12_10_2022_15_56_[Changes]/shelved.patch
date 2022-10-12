@@ -1,0 +1,46 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"de\">\r\n<head>\r\n    <link rel=\"stylesheet\" href=\"index.css\">\r\n    <meta charset=\"UTF-8\">\r\n    <title>E-Mensa Aachen</title>\r\n</head>\r\n<body>\r\n    <div class=\"grid-container\">\r\n            <div id=\"topic\">\r\n                <h1 id=\"überschrift\"><span class=\"fh\">E-</span>Mensa <span class=\"fh\">FH-</span>Aachen</h1>\r\n\r\n            </div>\r\n            <div class=\"auswahl\">\r\n                <ul class=\"auswahl\">\r\n                    <li>Ankündigung</li>\r\n                    <li>Speiseplan</li>\r\n                    <li>Zahlen</li>\r\n                    <li>Kontakt</li>\r\n                    <li>Wichtig für uns</li>\r\n                </ul>\r\n             </div>\r\n\r\n            <div class=\"mensalogo\">\r\n                <div id=\"logo\">\r\n                    <img src=\"fhaachen.png\" width=\"150\" height=\"119\" alt=\"fhlogo\">\r\n                </div>\r\n            </div>\r\n            <div id=\"info\">\r\n                <h1 id=\"boxüberschrift\">Bald gibt Essen auch online</h1>\r\n                <p id=\"box\">\r\n                    Dies ist eine textbox\r\n                </p>\r\n            </div>\r\n            <div class=\"foodtable\">\r\n                <h1 id=\"tableüberschrift\">Köstlichkeiten die sie erwarten</h1>\r\n                <table id=\"table\">\r\n                    <tr>\r\n                        <th></th>\r\n                        <th>Preis intern</th>\r\n                        <th>Preis extern</th>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Rinfleich mit Bambus Kaiserschoten und rotem Paprika, dazu Mie Nudeln</td>\r\n                        <td>3.50</td>\r\n                        <td>6.20</td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>Rindfleich mit Bambus Kaiserschoten und rotem Paprika, dazu Mie Nudeln</td>\r\n                        <td>2.90</td>\r\n                        <td>5.30</td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n            <div class=\"counter\">\r\n                <h1>E-Mensa in Zahlen</h1>\r\n                <p>VISITOR COUNTER PHP</p>\r\n            </div>\r\n            <div class=\"formular\">\r\n                <form method=\"post\" action=\"/formdata.html\">\r\n                    <input>\r\n                    <input>\r\n                </form>\r\n            </div>\r\n    </div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 6cf175da76105bb333ad8934f89a6c1cf171328d)
++++ b/index.html	(date 1665408958358)
+@@ -23,7 +23,7 @@
+ 
+             <div class="mensalogo">
+                 <div id="logo">
+-                    <img src="fhaachen.png" width="150" height="119" alt="fhlogo">
++                    <img src="fhaachen.png" width="150px" height="119" alt="fhlogo">
+                 </div>
+             </div>
+             <div id="info">
+@@ -57,9 +57,23 @@
+                 <p>VISITOR COUNTER PHP</p>
+             </div>
+             <div class="formular">
+-                <form method="post" action="/formdata.html">
+-                    <input>
+-                    <input>
++                <form class="newsletter" method="post" action="/formdata.html">
++                    <label class="vorname"  id="name" for="vorname">Vorname</label><br>
++                    <input class="vorname" type="text" id="vorname" value="Bitte geben Sie Vornamen ein." required>
++
++                    <label class="mail" id="mail" for="email">E-Mail</label><br>
++                    <input class="mail" type="text" id="email" value="Bitte geben Sie Ihre Email ein." required>
++
++                    <label class="lan" id="sprache" for="sprache" >Sprachauswahl</label><br>
++                    <select class="lan" >
++                        <option value="Deutsch" selected>Deutsch</option>
++                        <option value="Englisch">Englisch</option>
++                        <option value="Finnisch">Finnisch</option>
++                    </select>
++
++                    <label class="box" for="check" id="checklabel">Den Datenschutzbestimmungen stimme ich zu:</label>
++                    <input class="box" type="checkbox" value="Den Datenschutzbestimmung stimme ich zu" id="check">
++
+                 </form>
+             </div>
+     </div>
