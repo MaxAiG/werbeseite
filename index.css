@@ -5,7 +5,7 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #topic{
@@ -94,9 +94,41 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-.formular{
-    text-align: center;
+#anmeldung{
     grid-row-start: 6;
     grid-column-start: 2;
-    grid-column-end: 3;
+}
+#anmdfrm{
+    text-align: center;
+}
+ul.horizontal-list{
+
+    list-style: none;
+    padding-inline: 20px ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+ul.horizontal-list li {
+    display: inline-block;
+    padding-inline: 10px;
+    padding-top: 5px
+
+}
+footer{
+    grid-row-start: 8;
+    grid-column-start: 2;
+}
+footer li{
+    text-decoration: none;
+    border-right: 1px solid black
+}
+#wichtig{
+    grid-column-start: 2;
+    grid-rows-start: 7;
+    text-align: center;
+}
+#endline{
+        grid-column-start: 1;
+        grid-column-end: 4;
 }

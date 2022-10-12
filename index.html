@@ -58,17 +58,33 @@
                 <p>VISITOR COUNTER PHP</p>
             </div>
 
-                <form id="newsletterregister" class="newsletter" method="post" action="/formdata.html">
-                    <label for="prename" >Vorname:</label>
-                    <input type="text" class="prename" id="prename">
-                    <label for="mail">E-Mail:</label>
-                    <input type="text" class="mail" id="mail">
-                    <label for="agb" >Den Datenschutzbestimmung stimme ich zu</label>
-                    <input type="checkbox" id="agb" class="agb">
-                    <label for="register">Zum Newsletter anmelden</label>
-                    <input type="submit" class="register" id="register">
 
-                </form>
+        <form method="post" id="anmeldung">
+            <h1 id="anmdfrm" class="menu-os">Interesse geweckt? Wir informieren Sie!</h1>
+            <ul class="horizontal-list">
+                <li><label for="name">Ihr Name:</label> <br>
+                    <input type="text" id="name" name="name" required> </li>
+                <li> <label for="email">Ihre E-Mail:</label> <br>
+                    <input type="text" id="email" name="email" required> </li>
+                <li> <label for="sprache">Newsletter bitte in</label>
+                    <select name="sprache" id="sprache">
+                        <option value="de">Deutsch</option>
+                        <option value="eng">Englisch</option>
+                    </select> </li> <br>
+                <li>  <input type="checkbox" id="dtschutz" name="dtschutz" required>
+                    <label for="dtschutz">Den Datenschutzbestimmungen stimme ich zu</label>
+                    <button type="submit" form="anmeldung" value="test" disabled="disabled">Zum Newsletter anmelden</button> </li>
+            </ul>
+        </form>
+        <div id="wichtig">
+            <h1>Das ist Wichtig für uns</h1>
+            <ul>
+                <li>Punkt 1</li>
+                <li>Punkt 2</li>
+                <li>Punkt 3</li>
+            </ul >
+            <hr id="endline">
+        </div>
         <footer>
             <ul class="horizontal-list">
                 <li>(c) E-Mensa GmbH</li>
